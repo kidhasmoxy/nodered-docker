@@ -1,5 +1,7 @@
 FROM nodered/node-red:latest-10
 
+USER root
+
 RUN apk add --no-cache \
     build-base \
     g++ \
@@ -10,3 +12,5 @@ RUN apk add --no-cache \
     pixman-dev \
     libjpeg-turbo-dev \
     giflib-dev
+
+USER node-red
