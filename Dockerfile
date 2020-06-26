@@ -11,6 +11,7 @@ RUN apk add --no-cache \
     pkgconfig \
     pixman-dev \
     libjpeg-turbo-dev \
-    giflib-dev
+    giflib-dev \
+    libopencv-dev
 
 USER node-red
